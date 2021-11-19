@@ -1,0 +1,5 @@
+1. If GET response is not valid, either retry the GET requests in intervals or if response is a error code/contains a message, decide how it should respond considering this.
+2. Repeat the GET request 5 times to get an average
+3. If GET response contains the temperature, and has repeated for 5 days, take the average
+4. Remove retrieved jsons older than 5 days.
+5. Authentication should expect user level authentication to prove not a tool (API uses GET to check single sign on)
