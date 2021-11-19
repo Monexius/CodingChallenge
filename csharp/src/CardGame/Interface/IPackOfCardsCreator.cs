@@ -2,6 +2,6 @@
 {
     public interface IPackOfCardsCreator
     {
-        IPackOfCards Create();
+        static IPackOfCards Create { get; }
     }
 }
